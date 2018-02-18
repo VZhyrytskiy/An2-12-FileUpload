@@ -1,0 +1,10 @@
+<section>
+  <h1>File Upload</h1>
+  <form>
+    <input class="invisible" type="file" name="sampleFile" (change)="onSelectFile($event)" #fileInput>
+    <button type="button" (click)="fileInput.click()">Pick File</button>
+    <button type="button" (click)="onUpload()">Upload</button>
+  </form>
+  <div>{{uploadProgress}}</div>
+</section>
+
